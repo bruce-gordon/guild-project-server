@@ -52,7 +52,7 @@ app.delete('/enrollments/:id', (request, response) => {
 
 //POST an enrollment by userId and courseId
 app.post('/enrollments', (request, response) => {
-  const id = Date.now();
+  const enrollmentId = Date.now();
   const enrollment = request.body;
 
   for (let requiredParameter of ['userId', 'courseId']) {
@@ -65,8 +65,8 @@ app.post('/enrollments', (request, response) => {
 
   const { userId, courseId } = enrollment;
   if (userId && courseId) {
-    app.locals.enrollments.push({ id, courseId, userId });
-    response.status(201).json({ id, courseId, userId });
+    app.locals.enrollments.push({ enrollmentId, courseId, userId });
+    response.status(201).json({ enrollmentId, courseId, userId });
   }
 });
 
