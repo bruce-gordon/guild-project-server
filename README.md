@@ -1,6 +1,6 @@
 # guild-project-server
 
-# Guild Application | Back-End
+## Guild Application | Back-End
 
 ## Install Instructions:
 1. Clone down this repo
