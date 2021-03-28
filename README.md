@@ -1,4 +1,4 @@
-# Guild Application | Back-End
+# San Junipero Server | Back-End
 
 ## Install Instructions:
 1. Clone down this repo
