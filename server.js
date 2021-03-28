@@ -10,7 +10,7 @@ app.use(express.json());
 app.set('port', process.env.PORT || 3001);
 
 app.locals = {
-  title: 'Guild Project Server',
+  title: 'San Junipero Server',
   users,
   enrollments,
   courses
